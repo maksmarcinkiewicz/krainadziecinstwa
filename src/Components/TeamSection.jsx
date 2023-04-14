@@ -1,5 +1,9 @@
 import React from "react";
-import teamMember1 from "../assets/member-1.png"; // Import your team member image 1 here
+import teamMember1 from "../assets/member-1.jpg";
+import teamMember2 from "../assets/member-2.jpg";
+import teamMember3 from "../assets/member-4.jpg";
+import teamMember4 from "../assets/member-5.jpg";
+import teamMember5 from "../assets/member-6.jpg";
 
 const teamMembers = [
   {
@@ -12,32 +16,27 @@ const teamMembers = [
     id: 2,
     name: "Imię i nazwisko 2",
     position: "Stanowisko 2",
-    image: teamMember1,
+    image: teamMember2,
   },
   {
     id: 3,
     name: "Imię i nazwisko 2",
     position: "Stanowisko 2",
-    image: teamMember1,
+    image: teamMember3,
   },
   {
     id: 4,
     name: "Imię i nazwisko 2",
     position: "Stanowisko 2",
-    image: teamMember1,
+    image: teamMember4,
   },
   {
     id: 5,
     name: "Imię i nazwisko 2",
     position: "Stanowisko 2",
-    image: teamMember1,
+    image: teamMember5,
   },
-  {
-    id: 6,
-    name: "Imię i nazwisko 2",
-    position: "Stanowisko 2",
-    image: teamMember1,
-  },
+
   // Add more team members to the array as needed
 ];
 

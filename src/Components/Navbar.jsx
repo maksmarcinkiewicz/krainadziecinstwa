@@ -36,10 +36,10 @@ export const Navbar = () => {
           <div className="flex-none hidden lg:block ">
             <ul className="menu menu-horizontal">
               <li>
-                <a>Dokumenty</a>
+                <a href="#documents">Dokumenty</a>
               </li>
               <li>
-                <a>Kontakt</a>
+                <a href="#contact">Kontakt</a>
               </li>
             </ul>
           </div>
@@ -54,12 +54,12 @@ export const Navbar = () => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-base-100 rounded-r-xl">
+        <ul className="menu p-4 w-80 bg-base-100">
           <li>
-            <a>Mobile Dokumenty</a>
+            <a href="#documents">Dokumenty</a>
           </li>
           <li>
-            <a>Mobile Kontakt</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
       </div>

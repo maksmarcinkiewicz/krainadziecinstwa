@@ -30,13 +30,13 @@ const DocumentsSection = () => {
   return (
     <section className="bg-white py-12 p-4">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Dokumenty do pobrania</h2>
-        <div className="carousel  gap-12">
+        <h2 className="text-3xl font-bold mb-4">Dokumenty do pobrania</h2>
+        <div className="carousel gap-8 md:gap-10 py-8">
           {dokumenty.map((dokument, index) => (
             <div
               id={dokument.num}
               key={index}
-              className="p-4 bg-gray-100 rounded-lg carousel-item w-8/12 flex flex-col max-w-xs"
+              className="p-4 bg-gray-100 rounded-xl carousel-item w-9/12 flex flex-col max-w-xs shadow-md"
             >
               <h3 className="text-xl font-semibold mb-4">{dokument.nazwa}</h3>
               <p className="text-gray-600 text-justify">{dokument.opis}</p>

@@ -1,18 +1,18 @@
 import React from "react";
-import contactImg from "../assets/contact-img.png";
+import contactImg from "../assets/contact-img-enhance.png";
 const ContactSection = () => {
   return (
-    <section className="bg-gwhite py-10">
+    <section className="bg-white py-10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
             <img
               src={contactImg} // ścieżka do zdjęcia
-              alt="Zdjęcie przedszkola"
+              alt="Zdjęcie kontaktowe"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="md:w-1/2 md:ml-10 shadow-md rounded-md p-6 bg-gray-100 m-6">
+          <div className="md:w-1/2 md:ml-10 rounded-md p-6 bg-gray-100 m-4 shadow-md">
             <h2 className="text-3xl font-bold mb-4">Skontaktuj się z nami</h2>
             <p className="text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

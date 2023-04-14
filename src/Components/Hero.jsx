@@ -10,8 +10,7 @@ export const Hero = () => {
         </div>
         <div className="lg:w-1/2">
           <div className="badge badge-outline mb-4 py-3 px-5 font-mono gap-2">
-            ⏳
-            <span className="text-xs font-extrabold">strona w przebudowie</span>{" "}
+            ⏳<span className="text-xs">strona w przebudowie</span>
           </div>
           <h1 className="font-title mb-2 text-2xl text-justify font-bold sm:text-5xl lg:text-4xl">
             Kraina Dzieciństwa - przedszkole pełne radości, zabawy i nauki!

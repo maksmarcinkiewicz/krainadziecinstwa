@@ -6,12 +6,13 @@ import ThridSection from "./ThirdSection";
 import DocumentsSection from "./DocumentsSection";
 import Footer from "./Footer";
 import ContactSection from "./ContactSection";
+import TeamSection from "./TeamSection";
 export const Navbar = () => {
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <div className="w-full navbar sticky top-0 z-30 bg-white lg:mt-12 lg:px-12">
+        <div className="w-full navbar  lg:mt-12 lg:px-12">
           <div className="flex-none lg:hidden ">
             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
               <svg
@@ -32,7 +33,7 @@ export const Navbar = () => {
           <div className="flex-1 justify-end lg:justify-start px-2 mx-2 ">
             <img src={logo} alt="" className="h-[64px] lg:h-[128px]" />
           </div>
-          <div className="flex-none hidden lg:block">
+          <div className="flex-none hidden lg:block ">
             <ul className="menu menu-horizontal">
               <li>
                 <a>Dokumenty</a>
@@ -46,13 +47,14 @@ export const Navbar = () => {
         <Hero />
 
         <DocumentsSection />
+        <TeamSection />
         <ThridSection />
         <ContactSection />
         <Footer />
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-base-100">
+        <ul className="menu p-4 w-80 bg-base-100 rounded-r-xl">
           <li>
             <a>Mobile Dokumenty</a>
           </li>

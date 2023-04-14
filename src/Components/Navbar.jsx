@@ -31,7 +31,9 @@ export const Navbar = () => {
             </label>
           </div>
           <div className="flex-1 justify-end lg:justify-start px-2 mx-2 ">
-            <img src={logo} alt="" className="h-[64px] lg:h-[128px]" />
+            <a href="/">
+              <img src={logo} alt="" className="h-[64px] lg:h-[128px]" />
+            </a>
           </div>
           <div className="flex-none hidden lg:block ">
             <ul className="menu menu-horizontal">

@@ -1,18 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <div className="App">
-      <div className="">
-        <Navbar />
-      </div>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

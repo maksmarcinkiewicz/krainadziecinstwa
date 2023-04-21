@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/router": "^0.0.1-beta.84",
     "@trendyol-js/react-carousel": "^3.0.2",
     "daisyui": "^2.51.5",
     "framer-motion": "^10.11.6",

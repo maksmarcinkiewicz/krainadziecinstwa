@@ -1,39 +1,39 @@
 import React from "react";
 import teamMember1 from "../assets/member-1.jpg";
 import teamMember2 from "../assets/member-2.jpg";
-import teamMember3 from "../assets/member-4.jpg";
-import teamMember4 from "../assets/member-5.jpg";
-import teamMember5 from "../assets/member-6.jpg";
+import teamMember3 from "../assets/member-3.jpg";
+import teamMember4 from "../assets/member-4.jpg";
+import teamMember5 from "../assets/member-5.jpg";
 
 const teamMembers = [
   {
     id: 1,
-    name: "Imię i nazwisko 1",
-    position: "Stanowisko 1",
+    name: "Justyna Sorbian",
+    position: "Nauczycielka przedszkolna",
     image: teamMember1,
   },
   {
     id: 2,
-    name: "Imię i nazwisko 2",
-    position: "Stanowisko 2",
+    name: "Ewa Borowska",
+    position: "Nauczycielka przedszkolna",
     image: teamMember2,
   },
   {
     id: 3,
-    name: "Imię i nazwisko 2",
-    position: "Stanowisko 2",
+    name: "Magda Świderska",
+    position: "Opiekunka dziecięca",
     image: teamMember3,
   },
   {
     id: 4,
-    name: "Imię i nazwisko 2",
-    position: "Stanowisko 2",
+    name: "Małgorzata Doruch",
+    position: "Opiekunka dziecięca",
     image: teamMember4,
   },
   {
     id: 5,
-    name: "Imię i nazwisko 2",
-    position: "Stanowisko 2",
+    name: "Honorata Dworak",
+    position: "Pomoc nauczycielki",
     image: teamMember5,
   },
 
@@ -76,10 +76,12 @@ const TeamSection = () => {
                 className="w-64 h-full object-cover rounded-xl shadow-md brightness-75 "
               />
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-white text-center text-xl font-extrabold">
+                <p className="text-white text-center text-sm font-extrabold">
                   {teamMember.name}
                 </p>
-                <p className="text-white text-center">{teamMember.position}</p>
+                <p className="text-white text-center text-sm">
+                  {teamMember.position}
+                </p>
               </div>
             </div>
           ))}

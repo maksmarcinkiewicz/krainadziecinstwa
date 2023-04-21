@@ -1,7 +1,25 @@
 import React from "react";
-import contactImg from "../assets/contact-img-enhance.png";
-import emailIcon from "../assets/at-sign.png";
-import facebookIcon from "../assets/facebook.png";
+import contactImg from "../assets/contactImg.png";
+import emailIcon from "../assets/icons/at-sign.png";
+import facebookIcon from "../assets/icons/facebook.png";
+import phoneIcon from "../assets/icons/phoneIcon.png";
+import mapIcon from "../assets/icons/map.png";
+
+const contactData = [
+  {
+    img: contactImg,
+    content: "krainadziecinstwa@gmail.com",
+  },
+  {
+    img: phoneIcon,
+    content: "+48 123 456 789",
+  },
+  {
+    img: contactImg,
+    content: "krainadziecinstwa@gmail.com",
+  },
+];
+
 const ContactSection = () => {
   return (
     <section id="contact" className="bg-white py-10">
@@ -28,28 +46,50 @@ const ContactSection = () => {
               przedszkolem. Dziękujemy za cierpliwość i zrozumienie w tej
               kwestii.
             </p>
-            <div className="flex items-center gap-2 mt-10">
-              <img
-                src={emailIcon} // ścieżka do zdjęcia
-                alt="Zdjęcie kontaktowe"
-                className="w-12 h-12 md:w-24 md:h-24 object-cover"
-              />
-              <p className="text-lg lg:text-3xl font-bold font-mono">
-                krainadziecinstwa@gmail.com
-              </p>
-            </div>
-            <div className="flex items-center gap-2 mt-10">
-              <img
-                src={facebookIcon} // ścieżka do zdjęcia
-                alt="Zdjęcie kontaktowe"
-                className="w-12 h-12 lg:w-24 lg:h-24 object-cover"
-              />
-              <a
-                className="text-lg lg:text-3xl font-bold font-mono hover:underline "
-                href="https://www.facebook.com/profile.php?id=100049134353286"
-              >
-                Kraina Dzieciństwa w Łupowie
-              </a>
+            <div className="flex flex-col  items-start">
+              <div className="flex  items-center gap-2 mt-10">
+                <img
+                  src={emailIcon} // ścieżka do zdjęcia
+                  alt="Zdjęcie kontaktowe"
+                  className="w-12 h-12  object-cover"
+                />
+                <a
+                  href="mailto:krainadziecinstwa@gmail.com"
+                  className="text-lg "
+                >
+                  krainadziecinstwa@gmail.com
+                </a>
+              </div>
+              <div className="flex  items-center gap-2 mt-10">
+                <img
+                  src={phoneIcon} // ścieżka do zdjęcia
+                  alt="Zdjęcie kontaktowe"
+                  className="w-12 h-12  object-cover"
+                />
+                <a href="tel:+48123456789" className="text-lg ">
+                  +48 123 456 789
+                </a>
+              </div>
+              <div className="flex items-center gap-2 mt-10">
+                <img
+                  src={facebookIcon} // ścieżka do zdjęcia
+                  alt="Zdjęcie kontaktowe"
+                  className="w-12 h-12 object-cover"
+                />
+                <a href="" className="text-lg ">
+                  Kraina Dziecinstwa w Lupowie
+                </a>
+              </div>
+              <div className="flex items-center gap-2 mt-10">
+                <img
+                  src={mapIcon} // ścieżka do zdjęcia
+                  alt="Zdjęcie kontaktowe"
+                  className="w-12 h-12 object-cover"
+                />
+                <a href="" className="text-lg ">
+                  Lipowa 12, 66-450 Jenin
+                </a>
+              </div>
             </div>
           </div>
         </div>

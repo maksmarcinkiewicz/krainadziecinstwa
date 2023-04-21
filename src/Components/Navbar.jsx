@@ -1,12 +1,14 @@
 import * as React from "react";
 import Hero from "./Hero";
 
-import logo from "../assets/LOGO.png";
+import logo from "../assets/logo.jpg";
 import ThridSection from "./ThirdSection";
 import DocumentsSection from "./DocumentsSection";
 import Footer from "./Footer";
 import ContactSection from "./ContactSection";
 import TeamSection from "./TeamSection";
+import AnimatedTabs from "./AnimatedTabs";
+import AboutUs from "./AboutUs";
 export const Navbar = () => {
   return (
     <div className="drawer">
@@ -32,29 +34,26 @@ export const Navbar = () => {
           </div>
           <div className="flex-1 justify-end lg:justify-start px-2 mx-2 ">
             <a href="/">
-              <img src={logo} alt="" className="h-[64px] lg:h-[128px]" />
+              <img src={logo} alt="" className="h-[64px] lg:h-[128px] mt-2" />
             </a>
           </div>
           <div className="flex-none hidden lg:block ">
             <ul className="menu menu-horizontal">
-              <li>
-                <a href="#documents">Dokumenty</a>
-              </li>
-              <li>
-                <a href="#contact">Kontakt</a>
-              </li>
+              <AnimatedTabs />
             </ul>
           </div>
         </div>
         <Hero />
 
         <DocumentsSection />
+        <AboutUs />
         <TeamSection />
+
         <ThridSection />
         <ContactSection />
         <Footer />
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side ">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-base-100">
           <li>

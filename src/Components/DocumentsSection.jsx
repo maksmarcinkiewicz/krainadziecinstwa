@@ -1,47 +1,120 @@
 import React from "react";
 
+import ewaluacjaPDF from "../assets/documents/kindergarten/ewaluacja-krainadziecinstwa.pdf";
+import statutPDF from "../assets/documents/kindergarten/statut-krainadziecinstwa.pdf";
+import umowaPDF from "../assets/documents/kindergarten/umowa-krainadziecinstwa.pdf";
+import upowaznieniePDF from "../assets/documents/kindergarten/upowaznienie-krainadziecinstwa.pdf";
+import wniosekPDF from "../assets/documents/kindergarten/wniosek-krainadziecinstwa.pdf";
+import wypadekPDF from "../assets/documents/kindergarten/wypadek-krainadziecinstwa.pdf";
+import zgodaPDF from "../assets/documents/kindergarten/zgoda-krainadziecinstwa.pdf";
+
+import wniosekKlubik from "../assets/documents/club/wniosek-klubik.pdf";
+import statutKlubik from "../assets/documents/club/statut-klubik.pdf";
+import umowaKlubik from "../assets/documents/club/umowa-klubik.pdf";
+import rozkladDniaKlubik from "../assets/documents/club/rozklad-dnia-klubik.pdf";
+
+import { Carousel } from "@trendyol-js/react-carousel";
+
 const DocumentsSection = () => {
-  const dokumenty = [
+  const documents = [
     {
-      nazwa: "Plan zajęć",
-      opis: "Dowiedz się, jakie zajęcia i aktywności są zaplanowane w naszym przedszkolu.",
-      plik: "/pliki/plan-zajec.pdf",
+      nazwa: "Ewaluacja",
+      opis: "Dokument zawierający ocenę postępów dziecka w przedszkolu w różnych obszarach rozwoju.",
+      plik: ewaluacjaPDF,
+      category: "przedszkole",
       num: 1,
     },
     {
-      nazwa: "Formularz zgłoszeniowy",
-      opis: "Zgłoś swoje dziecko do naszego przedszkola, wypełniając ten formularz.",
-      plik: "/pliki/formularz-zgloszeniowy.pdf",
+      nazwa: "Statut",
+      opis: "Regulamin przedszkola, określający zasady organizacji pracy, obowiązki i prawa dzieci, rodziców i pracowników.",
+      plik: statutPDF,
+      category: "przedszkole",
       num: 2,
     },
     {
-      nazwa: "Regulamin",
-      opis: "Przeczytaj regulamin przedszkola, by być dobrze poinformowanym.",
-      plik: "/pliki/regulamin.pdf",
+      nazwa: "Umowa",
+      opis: "Umowa pomiędzy rodzicami a przedszkolem, określająca warunki uczestnictwa dziecka w życiu przedszkola.",
+      plik: umowaPDF,
+      category: "przedszkole",
       num: 3,
     },
     {
-      nazwa: "Kalendarz roku szkolnego",
-      opis: "Sprawdź, kiedy odbywają się zajęcia w naszym przedszkolu i kiedy są przerwy.",
-      plik: "/pliki/kalendarz-roku-szkolnego.pdf",
+      nazwa: "Upowaznienie",
+      opis: "Upoważnienie do odbioru dziecka z przedszkola, wymagające podpisu rodziców.",
+      plik: upowaznieniePDF,
+      category: "przedszkole",
       num: 4,
+    },
+    {
+      nazwa: "Wniosek",
+      opis: "Oficjalne podanie rodziców o przyjęcie dziecka do przedszkola.",
+      plik: wniosekPDF,
+      category: "przedszkole",
+      num: 5,
+    },
+    {
+      nazwa: "Wypadek",
+      opis: "Dokumentacja dotycząca wypadków i incydentów w przedszkolu.",
+      plik: wypadekPDF,
+      category: "przedszkole",
+      num: 6,
+    },
+    {
+      nazwa: "Zgoda",
+      opis: "Zgoda rodziców na udział dziecka w wydarzeniach organizowanych przez przedszkole.",
+      plik: zgodaPDF,
+      category: "przedszkole",
+      num: 7,
+    },
+    {
+      nazwa: "Wniosek",
+      opis: "Oficjalne podanie rodziców o przyjęcie dziecka do klubiku dziecięcego.",
+      plik: wniosekKlubik,
+      category: "klubik",
+      num: 8,
+    },
+    {
+      nazwa: "Statut",
+      opis: "Regulamin klubiku dziecięcego, określający zasady organizacji pracy, obowiązki i prawa dzieci, rodziców i pracowników.",
+      plik: statutKlubik,
+      category: "klubik",
+      num: 9,
+    },
+    {
+      nazwa: "Umowa",
+      opis: "Umowa pomiędzy rodzicami a klubikiem dziecięcym, określająca warunki uczestnictwa dziecka w życiu klubiku.",
+      plik: umowaKlubik,
+      category: "klubik",
+      num: 10,
+    },
+    {
+      nazwa: "Rozklad dnia",
+      opis: "Harmonogram zajęć w klubiku dziecięcym, zawierający informacje o godzinach rozpoczęcia i zakończenia poszczególnych zajęć oraz rodzaju działań.",
+      plik: rozkladDniaKlubik,
+      category: "klubik",
+      num: 11,
     },
   ];
   return (
     <section id="documents" className="bg-white py-12 p-4">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-4">Dokumenty do pobrania</h2>
-        <div className="carousel gap-8 md:gap-10 py-8">
-          {dokumenty.map((dokument, index) => (
+
+        <div className="carousel  gap-6 py-8 lg:grid lg:grid-cols-4">
+          {documents.map((document, index) => (
             <div
-              id={dokument.num}
+              id={document.num}
               key={index}
               className="p-4 bg-gray-100 rounded-xl carousel-item w-9/12 flex flex-col max-w-xs shadow-md"
             >
-              <h3 className="text-xl font-semibold mb-4">{dokument.nazwa}</h3>
-              <p className="text-gray-600 text-justify">{dokument.opis}</p>
+              <div className="flex justify-between items-baseline">
+                <h3 className="text-xl font-semibold mb-4">{document.nazwa}</h3>
+                <p className="text-sm text-gray-500">{document.category}</p>
+              </div>
+              <p className="text-gray-600 text-justify">{document.opis}</p>
+
               <a
-                href={dokument.plik}
+                href={document.plik}
                 className="mt-4 btn btn-outline w-full shadow-md"
                 download
               >

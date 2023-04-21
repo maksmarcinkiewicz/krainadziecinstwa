@@ -1,8 +1,35 @@
 import React from "react";
-import foodIcon from "../assets/food-icon.png";
-import safetyIcon from "../assets/safety-icon.png";
-import experienceIcon from "../assets/experience-icon.png";
-import teachingIcon from "../assets/teaching-icon.png";
+import foodIcon from "../assets/icons/food-icon.png";
+import safetyIcon from "../assets/icons/safety-icon.png";
+import experienceIcon from "../assets/icons/experience-icon.png";
+import teachingIcon from "../assets/icons/teaching-icon.png";
+
+const benefits = [
+  {
+    img: experienceIcon,
+    title: "Doświadczenie",
+    content:
+      "Nasz zespół nauczycieli zapewni najlepszą opiekę i edukację dla Twojego dziecka.",
+  },
+  {
+    img: safetyIcon,
+    title: "Bezpieczeństwo",
+    content:
+      "Bezpieczne i przyjazne otoczenie, które sprzyja rozwijaniu kreatywności i samodzielności.",
+  },
+  {
+    img: teachingIcon,
+    title: "Nowoczesne nauczanie",
+    content:
+      "Nowoczesne metody nauczania, odpowiednie dla wieku i umiejętności dzieci.",
+  },
+  {
+    img: foodIcon,
+    title: "Świadome żywienie",
+    content:
+      "Zdrowe i smaczne posiłki przygotowywane z dbałością o odpowiednią dietę.",
+  },
+];
 
 const ThridSection = () => {
   return (
@@ -11,46 +38,24 @@ const ThridSection = () => {
         <div className="flex flex-wrap ">
           <div className="w-full mt-8 md:mt-0">
             <div className=" mx-auto">
-              <h2 className="text-3xl font-bold mb-4">
-                Zalety naszego przedszkola
-              </h2>
               <ul className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <li className="text-gray-700 flex items-center gap-12 shadow-md p-4 rounded-xl">
-                  <p className="text-justify flex-grow ">
-                    <b>Wyszkolony</b> zespół nauczycieli z <b>bogatym </b>
-                    doświadczeniem w pracy z najmłodszymi.
-                  </p>
-                  <img
-                    src={experienceIcon}
-                    alt="Food Icon"
-                    className="w-16 h-16 "
-                  />
-                </li>
-                <li className="text-gray-700 text-justify flex items-center gap-12 shadow-md p-4 rounded-xl">
-                  <p className="text-justify flex-grow ">
-                    <b>Bezpieczne</b> i przyjazne <b>otoczenie</b>, które
-                    sprzyja rozwijaniu kreatywności i samodzielności.
-                  </p>
-                  <img src={safetyIcon} alt="Food Icon" className="w-16 h-16" />
-                </li>
-                <li className="text-gray-700 text-justify flex items-center gap-12 shadow-md p-4 rounded-xl">
-                  <p className="text-justify flex-grow ">
-                    <b>Nowoczesne</b> metody nauczania, odpowiednie dla wieku i
-                    umiejętności dzieci.
-                  </p>
-                  <img
-                    src={teachingIcon}
-                    alt="Food Icon"
-                    className="w-16 h-16 "
-                  />
-                </li>
-                <li className="text-gray-700 text-justify flex items-center gap-12 shadow-md p-4 rounded-xl">
-                  <p className="text-justify flex-grow ">
-                    <b>Zdrowe</b> i smaczne posiłki przygotowywane z{" "}
-                    <b>dbałością</b> o odpowiednią dietę.
-                  </p>
-                  <img src={foodIcon} alt="Food Icon" className="w-16 h-16 " />
-                </li>
+                {benefits.map((benefit, index) => (
+                  <li className="text-gray-700 flex flex-col gap-2 shadow-md p-4 rounded-xl">
+                    <div key={index}>
+                      <img
+                        src={benefit.img}
+                        alt="Food Icon"
+                        className="w-16 h-16 "
+                      />
+                      <h3 className="text-xl font-bold mt-2">
+                        {benefit.title}
+                      </h3>
+                    </div>
+                    <p className="text-justify text-gray-500">
+                      {benefit.content}
+                    </p>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

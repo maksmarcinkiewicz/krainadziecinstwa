@@ -113,13 +113,13 @@ const DocumentsSection = () => {
         {/* Dodaj przyciski */}
         <CategoryTabs setSelectedCategory={setSelectedCategory} />
 
-        <div className="carousel  gap-6 py-8 lg:grid lg:grid-cols-4">
+        <div className="relative w-full flex snap-x overflow-x-auto pb-10  gap-6 py-8 lg:grid lg:grid-cols-4 ">
           {/* Wyświetl tylko dokumenty z wybranej kategorii */}
           {filteredDocuments.map((document, index) => (
             <div
               id={document.num}
               key={index}
-              className="p-4 bg-gray-100 rounded-xl carousel-item w-9/12 flex flex-col max-w-xs shadow-md"
+              className="p-4 bg-gray-100 rounded-xl snap-center shrink-0 w-9/12 flex flex-col max-w-xs shadow-md"
             >
               <div className="flex justify-between items-baseline">
                 <h3 className="text-xl font-semibold mb-4">{document.nazwa}</h3>

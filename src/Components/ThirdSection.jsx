@@ -41,22 +41,23 @@ const ThridSection = () => {
               <ul className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {benefits.map((benefit, index) => (
                   <li
-                    className="text-gray-700 flex flex-col gap-2 shadow-md p-4 rounded-xl"
+                    className="text-gray-700 flex flex-col gap-2  p-4 rounded-xl"
                     key={index}
                   >
-                    <div>
-                      <img
-                        src={benefit.img}
-                        alt="Food Icon"
-                        className="w-16 h-16 "
-                      />
+                    <img
+                      src={benefit.img}
+                      alt="Food Icon"
+                      className="w-16 h-16 "
+                    />
+
+                    <div className="shadow-md p-4 rounded-md">
                       <h3 className="text-xl font-bold mt-2">
                         {benefit.title}
                       </h3>
+                      <p className="text-justify text-gray-500">
+                        {benefit.content}
+                      </p>
                     </div>
-                    <p className="text-justify text-gray-500">
-                      {benefit.content}
-                    </p>
                   </li>
                 ))}
               </ul>

@@ -1,52 +1,33 @@
-// import { useState } from "react";
-// import { motion } from "framer-motion";
-// import "./App.css";
-// import Home from "./pages/Home";
-// import React, { StrictMode } from "react";
-// import ErrorPage from "./pages/error-page";
-
-// export default function App() {
-//   return (
-//     <Routes>
-//       <Route path="/" element={<Layout />}>
-//         <Route index element={<Home />} />
-
-//         <Route path="*" element={<ErrorPage />} />
-//       </Route>
-//     </Routes>
-//   );
-// }
 import * as React from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import DrawerMain from "./Components/navbar/DrawerMain";
-import DrawerSide from "./Components/navbar/DrawerSide";
-import Home from "./pages/Home";
+
+import HomePage from "./pages/home-page";
 import DocumentsSection from "./Components/DocumentsSection";
 import ContactSection from "./Components/ContactSection";
 import Layout from "./Components/Layout";
+import Offer from "./Components/Offer";
+import AboutPage from "./pages/about-page";
+import DocumentsPage from "./pages/documents-page";
+import ContactPage from "./pages/contact-page";
+import EventsPage from "./pages/events-page";
 
 export default function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route index element={<HomePage />} />
+          <Route path="oferta" element={<Offer />} />
+          <Route path="o-nas" element={<AboutPage />} />
+          <Route path="dokumenty" element={<DocumentsPage />} />
+          <Route path="wydarzenia" element={<EventsPage />} />
+          <Route path="kontakt" element={<ContactPage />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </div>
   );
-}
-
-function About() {
-  return <DocumentsSection />;
-}
-
-function Dashboard() {
-  return <ContactSection />;
 }
 
 function NoMatch() {

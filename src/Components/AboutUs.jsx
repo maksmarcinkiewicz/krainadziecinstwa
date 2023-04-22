@@ -60,8 +60,11 @@ const AboutUs = () => {
             rozwoju.
           </p>
           <div className=" mt-10 gap-4 carousel">
-            {achievements.map((achievement) => (
-              <div className="carousel-item w-8/12 border border-slate-100 md:w-1/2 lg:w-1/5 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md">
+            {achievements.map((achievement, index) => (
+              <div
+                key={index}
+                className="carousel-item w-8/12 border border-slate-100 md:w-1/2 lg:w-1/5 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
+              >
                 <img src={achievement.icon} alt="" className="h-12 mt-2" />
                 <p className="text-gray-600">{achievement.text}</p>
               </div>

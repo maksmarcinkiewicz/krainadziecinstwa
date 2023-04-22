@@ -40,8 +40,11 @@ const ThridSection = () => {
             <div className=" mx-auto">
               <ul className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {benefits.map((benefit, index) => (
-                  <li className="text-gray-700 flex flex-col gap-2 shadow-md p-4 rounded-xl">
-                    <div key={index}>
+                  <li
+                    className="text-gray-700 flex flex-col gap-2 shadow-md p-4 rounded-xl"
+                    key={index}
+                  >
+                    <div>
                       <img
                         src={benefit.img}
                         alt="Food Icon"

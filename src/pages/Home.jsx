@@ -10,19 +10,14 @@ import DrawerSide from "../Components/navbar/DrawerSide";
 
 const Home = () => {
   return (
-    <div className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
-        <DrawerMain />
-        <Hero />
-        <DocumentsSection />
-        <AboutUs />
-        <TeamSection />
-        <ThridSection />
-        <ContactSection />
-        <Footer />
-      </div>
-      <DrawerSide />
+    <div className="">
+      <Hero />
+      <DocumentsSection />
+      <AboutUs />
+      <TeamSection />
+      <ThridSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };

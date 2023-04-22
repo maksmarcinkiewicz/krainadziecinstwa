@@ -3,8 +3,8 @@ import logo from "../../assets/logo.jpg";
 
 const DrawerMain = () => {
   return (
-    <div className="w-full navbar  lg:mt-12 lg:px-12">
-      <div className="flex-none lg:hidden ">
+    <div className="flex items-center justify-between lg:px-12 px-2">
+      <div className=" lg:hidden ">
         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,12 +21,12 @@ const DrawerMain = () => {
           </svg>
         </label>
       </div>
-      <div className="flex-1 justify-end lg:justify-start px-2 mx-2 ">
+      <div className=" justify-end lg:justify-start px-2 mx-2 ">
         <a href="/">
           <img src={logo} alt="" className="h-[64px] lg:h-[128px] mt-2" />
         </a>
       </div>
-      <div className="flex-none hidden lg:block ">
+      <div className="hidden lg:block ">
         <ul className="menu menu-horizontal">
           <AnimatedTabs />
         </ul>

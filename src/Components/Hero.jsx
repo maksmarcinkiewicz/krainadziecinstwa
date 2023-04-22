@@ -4,7 +4,7 @@ import heroImg from "../assets/hero-img.png";
 
 export const Hero = () => {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center p-4 lg:p-0 lg:mt-32">
+    <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center p-4 lg:p-0 lg:gap-12">
       <div className="lg:w-1/2">
         <img src={heroImg} alt="" className="mb-8" />
         {/* <Lottie animationData={animationData} loop={true} /> */}
@@ -18,10 +18,10 @@ export const Hero = () => {
         </h1>
         <p className="font-title text-justify text-lg sm:text-xl lg:text-xl">
           Witaj w Krainie Dzieciństwa - przedszkolu pełnym radości, zabawy i
-          nauki! Nasza doświadczona kadra pedagogiczna zapewnia dzieciom miłą
-          atmosferę, rozwijając ich talenty poprzez kreatywne zajęcia.
-          Zapraszamy do naszego przedszkola, gdzie dzieci stają się bohaterami
-          swoich przygód!
+          nauki! <br></br>Nasza doświadczona kadra pedagogiczna zapewnia
+          dzieciom miłą atmosferę, rozwijając ich talenty poprzez kreatywne
+          zajęcia. Zapraszamy do naszego przedszkola, gdzie dzieci stają się
+          bohaterami swoich przygód!
         </p>
         {/* <button className="btn btn-outline mt-5">Zapisz dziecko</button> */}
       </div>

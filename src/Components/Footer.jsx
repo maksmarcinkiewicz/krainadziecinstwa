@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+    <div className="bg-base-200">
+      <footer className="footer container mx-auto p-10 bg-base-200 text-base-content">
         <div>
           <span className="footer-title">Nasze przedszkole</span>
           <a className="link link-hover">O nas</a>
@@ -23,8 +23,8 @@ const Footer = () => {
           <a className="link link-hover">Polityka plików cookie</a>
         </div>
       </footer>
-      <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-        <div className="items-center grid-flow-col">
+      <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">
+        <div className="items-center  grid-flow-col">
           <p>
             <span className="text-lg font-bold">
               Kraina Dzieciństwa w Łupowie

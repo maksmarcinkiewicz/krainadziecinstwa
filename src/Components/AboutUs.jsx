@@ -26,10 +26,10 @@ const achievements = [
 
 const AboutUs = () => {
   return (
-    <section className="py-10 lg:py-20 p-4">
+    <section className="py-10 lg:py-20 p-4 overflow-hidden md:overflow-auto">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center">
         <div className="w-full lg:w-1/2 lg:pr-10">
-          <div className="relative ">
+          <div className="relative">
             <div className="">
               <img
                 src={rectangle}

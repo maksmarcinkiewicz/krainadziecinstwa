@@ -23,6 +23,8 @@ import DrawerSide from "./Components/navbar/DrawerSide";
 import Home from "./pages/Home";
 import DocumentsSection from "./Components/DocumentsSection";
 import ContactSection from "./Components/ContactSection";
+import Layout from "./Components/Layout";
+
 export default function App() {
   return (
     <div>
@@ -35,19 +37,6 @@ export default function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
-    </div>
-  );
-}
-
-function Layout() {
-  return (
-    <div className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
-        <DrawerMain />
-        <Outlet />
-      </div>
-      <DrawerSide />
     </div>
   );
 }

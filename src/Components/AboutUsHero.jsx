@@ -55,11 +55,11 @@ const AboutUsHero = () => {
           wykorzystaniem nowoczesnych narzędzi, nasz doświadczony zespół
           nauczycieli stworzy dla Twojego dziecka najlepsze warunki do rozwoju.
         </p>
-        <div className=" mt-10 gap-4 relative w-full flex snap-x overflow-x-auto pb-8">
+        <div className=" mt-10 gap-4 relative w-full flex snap-x snap-mandatory overflow-x-auto pb-8">
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="snap-center shrink-0 w-8/12 border border-slate-100 md:w-1/2 lg:w-1/5 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
+              className="snap-start scroll-ml-4  shrink-0 w-8/12 border border-slate-100 md:w-1/2 lg:w-1/5 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
             >
               <img src={achievement.icon} alt="" className="h-12 mt-2" />
               <p className="text-gray-600">{achievement.text}</p>

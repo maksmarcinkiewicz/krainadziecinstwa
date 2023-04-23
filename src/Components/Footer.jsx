@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="bg-base-200">
@@ -19,8 +21,11 @@ const Footer = () => {
         <div>
           <span className="footer-title">Pozostałe informacje</span>
           <a className="link link-hover">Kontakt</a>
+
           <a className="link link-hover">Polityka prywatności</a>
-          <a className="link link-hover">Polityka plików cookie</a>
+          <Link to="/cookie">
+            <a className="link link-hover">Polityka plików cookie</a>
+          </Link>
         </div>
       </footer>
       <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">

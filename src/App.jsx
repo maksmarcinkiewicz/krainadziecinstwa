@@ -10,6 +10,7 @@ import AboutPage from "./pages/about-page";
 import DocumentsPage from "./pages/documents-page";
 import ContactPage from "./pages/contact-page";
 import EventsPage from "./pages/events-page";
+import CookiePolicyPage from "./pages/cookie-policy-page";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="dokumenty" element={<DocumentsPage />} />
           <Route path="wydarzenia" element={<EventsPage />} />
           <Route path="kontakt" element={<ContactPage />} />
+          <Route path="cookie" element={<CookiePolicyPage />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>

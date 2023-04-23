@@ -3,8 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 let tabs = [
-  { id: "documents", label: "Dokumenty", path: "/about" },
-  { id: "contact", label: "Kontakt", path: "/dashboard" },
+  { id: "oferta", label: "Oferta", path: "/oferta" },
+  { id: "onas", label: "O nas", path: "/o-nas" },
+  { id: "dokumenty", label: "Dokumenty", path: "/dokumenty" },
+  { id: "wydarzenia", label: "Wydarzenia", path: "/wydarzenia" },
+  { id: "kontakt", label: "Kontakt", path: "/kontakt" },
 ];
 
 function AnimatedTabs() {
@@ -34,6 +37,9 @@ function AnimatedTabs() {
                 layoutId="bubble"
                 className="absolute inset-0 z-10  mix-blend-difference border-2 border-black rounded-full "
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                style={{
+                  borderRadius: 9999,
+                }}
               />
             )}
             {tab.label}

@@ -18,22 +18,18 @@ const achievements = [
     icon: icon3,
     text: "Innowacyjne podejście rozwija kreatywność i ciekawość świata dzieci.",
   },
-  {
-    icon: icon4,
-    text: "Indywidualne podejście dostosowuje edukację do potrzeb i umiejętności dziecka.",
-  },
 ];
 
 const AboutUsHero = () => {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center p-4 overflow-x-hidden md:overflow-auto">
+    <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center p-4 overflow-x-hidden md:overflow-auto lg:pt-16">
       <div className="w-full lg:w-1/2 lg:pr-10">
         <div className="relative">
           <div className="">
             <img
               src={rectangle}
               alt=""
-              className="absolute top-36 md:-top-20 -right-12 md:-right-24 w-60 h-60  rectangle-about -z-10"
+              className="absolute top-56 md:-top-20 -right-12 md:-right-24 w-60 h-60  rectangle-about -z-10"
             />
           </div>
 
@@ -59,7 +55,7 @@ const AboutUsHero = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="snap-start scroll-ml-4  shrink-0 w-8/12 border border-slate-100 md:w-1/2 lg:w-1/5 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
+              className="snap-start scroll-ml-4 shrink-0 lg:shrink  w-8/12 border border-slate-100 md:w-1/2 lg:w-4/12 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
             >
               <img src={achievement.icon} alt="" className="h-12 mt-2" />
               <p className="text-gray-600">{achievement.text}</p>

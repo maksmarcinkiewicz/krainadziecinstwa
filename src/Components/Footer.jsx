@@ -23,9 +23,7 @@ const Footer = () => {
           <a className="link link-hover">Kontakt</a>
 
           <a className="link link-hover">Polityka prywatności</a>
-          <Link to="/cookie">
-            <a className="link link-hover">Polityka plików cookie</a>
-          </Link>
+          <Link to="/cookie">Polityka plików cookie</Link>
         </div>
       </footer>
       <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">

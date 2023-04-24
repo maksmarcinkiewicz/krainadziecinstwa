@@ -39,6 +39,9 @@ function AnimatedTabs() {
                 layoutId="bubble"
                 className="absolute inset-0 z-10  mix-blend-difference border-2 border-gray-900 rounded-full "
                 transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
+                style={{
+                  borderRadius: 9999,
+                }}
               />
             )}
             {tab.label}

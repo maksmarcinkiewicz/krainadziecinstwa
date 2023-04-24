@@ -6,6 +6,7 @@ import phoneIcon from "../assets/icons/phoneIcon.png";
 import mapIcon from "../assets/icons/map.png";
 import ContactForm from "./ContactForm";
 import Confetti from "./Confetti";
+import { motion } from "framer-motion";
 
 const contactData = [
   {
@@ -39,18 +40,22 @@ const ContactSection = () => {
           <div className="flex flex-col  ">
             <div className="flex justify-between py-8">
               <a href="mailto:test@test.pl">
-                <img
+                <motion.img
                   src={emailIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"
                   className="w-16 h-16  object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               </a>
 
               <a href="tel:+48123456789">
-                <img
+                <motion.img
                   src={phoneIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"
                   className="w-16 h-16  object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               </a>
 
@@ -58,17 +63,21 @@ const ContactSection = () => {
                 href="https://www.facebook.com/profile.php?id=100049134353286"
                 target="_blank"
               >
-                <img
+                <motion.img
                   src={facebookIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"
                   className="w-16 h-16 object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               </a>
               <a href="https://goo.gl/maps/n7ZcsmDaQxaynfbSA" target="_blank">
-                <img
+                <motion.img
                   src={mapIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"
                   className="w-16 h-16 object-cover"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 />
               </a>
             </div>

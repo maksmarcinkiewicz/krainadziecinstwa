@@ -8,15 +8,12 @@ const Footer = () => {
           <span className="footer-title">Nasze przedszkole</span>
           <a className="link link-hover">O nas</a>
           <a className="link link-hover">Oferta</a>
-          <a className="link link-hover">Kadra pedagogiczna</a>
-          <a className="link link-hover">Galeria</a>
         </div>
         <div>
           <span className="footer-title">Dla rodziców</span>
           <a className="link link-hover">Jak zapisać dziecko</a>
           <a className="link link-hover">Cennik</a>
           <a className="link link-hover">Regulamin</a>
-          <a className="link link-hover">FAQ</a>
         </div>
         <div>
           <span className="footer-title">Pozostałe informacje</span>

@@ -1,6 +1,6 @@
 import React, { useCallback, useRef } from "react";
 import ReactCanvasConfetti from "react-canvas-confetti";
-
+import { motion } from "framer-motion";
 const canvasStyles = {
   position: "fixed",
   pointerEvents: "none",
@@ -57,8 +57,16 @@ export default function Confetti({ type, style }) {
 
   return (
     <>
-      <button type={type} className={style} onClick={fire}>
-        Wyślij
+      <button
+        type={type}
+        className={style}
+        onClick={fire}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <motion.span whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          Wyślij
+        </motion.span>
       </button>
       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
     </>

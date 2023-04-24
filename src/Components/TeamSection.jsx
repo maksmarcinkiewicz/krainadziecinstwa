@@ -76,11 +76,11 @@ const TeamSection = () => {
                 alt={`Team Member ${teamMember.id}`}
                 className="w-64 h-full object-cover rounded-xl shadow-md brightness-75 "
               />
-              <div className="absolute bottom-0 left-0 right-0 p-4">
+              <div className="absolute bottom-0 left-0 right-0 p-4  ">
                 <p className="text-white text-center text-sm font-extrabold">
                   {teamMember.name}
                 </p>
-                <p className="text-white text-center text-sm">
+                <p className="text-white text-center text-sm ">
                   {teamMember.position}
                 </p>
               </div>

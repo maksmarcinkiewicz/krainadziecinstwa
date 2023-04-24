@@ -5,7 +5,7 @@ import facebookIcon from "../assets/icons/facebook.png";
 import phoneIcon from "../assets/icons/phoneIcon.png";
 import mapIcon from "../assets/icons/map.png";
 import ContactForm from "./ContactForm";
-import Confetti from "./Confetti";
+
 import { motion } from "framer-motion";
 
 const contactData = [

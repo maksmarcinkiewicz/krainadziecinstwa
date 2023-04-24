@@ -1,5 +1,4 @@
 import React from "react";
-import { FaPencilAlt, FaPaintBrush, FaBook } from "react-icons/fa";
 
 const OfferPage = () => {
   return (

@@ -2,8 +2,7 @@ import * as React from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 import HomePage from "./pages/home-page";
-import DocumentsSection from "./Components/DocumentsSection";
-import ContactSection from "./Components/ContactSection";
+
 import Layout from "./Components/Layout";
 import OfferPage from "./pages/offer-page";
 import AboutPage from "./pages/about-page";

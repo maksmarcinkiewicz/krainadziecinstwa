@@ -28,7 +28,11 @@ const DrawerMain = () => {
         whileTap={{ scale: 0.9 }}
       >
         <Link to="/">
-          <img src={logo} alt="" className="h-[64px] lg:h-[128px] mt-2" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[64px] lg:w-[128px] h-[64px] lg:h-[128px] mt-2"
+          />
         </Link>
       </motion.div>
       <div className="hidden lg:block ">

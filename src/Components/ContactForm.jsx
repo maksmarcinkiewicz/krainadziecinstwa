@@ -45,8 +45,10 @@ const ContactForm = () => {
         name="redirect"
         value="https://web3forms.com/success"
       />
-
-      <Confetti type="submit" style="btn btn-outline" />
+      <button type="submit" className="btn btn-outline">
+        Wyślij
+      </button>
+      {/* <Confetti type="submit" style="btn btn-outline" /> */}
     </form>
   );
 };

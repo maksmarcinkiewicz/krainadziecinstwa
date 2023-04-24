@@ -4,6 +4,7 @@ import eventIcon from "../../assets/icons/nav-icons/event.png";
 import contactIcon from "../../assets/icons/nav-icons/contact-book.png";
 import offerIcon from "../../assets/icons/nav-icons/offer.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const menuItems = [
   { label: "Oferta", icon: offerIcon, link: "/oferta" },
   { label: "O nas", icon: aboutIcon, link: "/o-nas" },
@@ -19,12 +20,16 @@ const DrawerSide = () => {
       <ul className="menu p-4 w-80 bg-base-100">
         <h3 className="font-bold p-4 ">Kraina Dzieciństwa w Łupowie</h3>
         {menuItems.map((item) => (
-          <li key={item.label}>
+          <motion.li
+            key={item.label}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Link to={item.link}>
               <img src={item.icon} alt="" className="w-6 h-6" />
               <span>{item.label}</span>
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>

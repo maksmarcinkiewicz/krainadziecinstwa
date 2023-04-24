@@ -4,7 +4,7 @@ import teamMember2 from "../assets/member-2.jpg";
 import teamMember3 from "../assets/member-3.jpg";
 import teamMember4 from "../assets/member-4.jpg";
 import teamMember5 from "../assets/member-5.jpg";
-
+import { motion } from "framer-motion";
 const teamMembers = [
   {
     id: 1,
@@ -43,8 +43,8 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section className="bg-gray-100 p-4 py-12">
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-center gap-12 ">
-        <div className="md:w-1/3">
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start  gap-12 ">
+        <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">
             Nasi nauczyciele sprawiają, że jesteśmy wspaniali!
           </h2>
@@ -66,9 +66,10 @@ const TeamSection = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 ">
           {teamMembers.map((teamMember) => (
-            <div
+            <motion.div
               key={teamMember.id}
-              className="relative hover:scale-110 duration-700"
+              className="relative"
+              whileHover={{ scale: 1.1 }}
             >
               <img
                 src={teamMember.image}
@@ -83,7 +84,7 @@ const TeamSection = () => {
                   {teamMember.position}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

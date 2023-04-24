@@ -1,18 +1,18 @@
-import Lottie from "lottie-react";
-import animationData from "../assets/lottie-main.json";
 import heroImg from "../assets/hero-img.png";
-
-export const Hero = () => {
+import { motion } from "framer-motion";
+const Hero = () => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center p-4 lg:p-0 lg:gap-12">
       <div className="lg:w-1/2">
         <img src={heroImg} alt="" className="mb-8" />
-        {/* <Lottie animationData={animationData} loop={true} /> */}
       </div>
       <div className="lg:w-1/2">
-        <div className="badge badge-outline mb-4 py-3 px-5 font-mono gap-2">
-          ⏳<span className="text-xs">strona w przebudowie</span>
-        </div>
+        <motion.div
+          className="badge badge-outline mb-4 py-3 px-5 font-mono gap-2 hover:font-extrabold hover:text-sm"
+          whileHover={{ scale: 1.1 }}
+        >
+          ⏳<span className="text-xs ">strona w przebudowie</span>
+        </motion.div>
         <h1 className="font-title mb-2 text-2xl text-justify font-bold sm:text-5xl lg:text-4xl">
           Kraina Dzieciństwa - przedszkole pełne radości, zabawy i nauki!
         </h1>
@@ -23,7 +23,6 @@ export const Hero = () => {
           zajęcia. Zapraszamy do naszego przedszkola, gdzie dzieci stają się
           bohaterami swoich przygód!
         </p>
-        {/* <button className="btn btn-outline mt-5">Zapisz dziecko</button> */}
       </div>
     </div>
   );

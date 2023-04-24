@@ -20,10 +20,13 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title">Pozostałe informacje</span>
-          <a className="link link-hover">Kontakt</a>
+          <Link to="/kontakt">Kontakt</Link>
 
           <a className="link link-hover">Polityka prywatności</a>
-          <Link to="/cookie">Polityka plików cookie</Link>
+
+          <Link to="/cookie">
+            <a href="#my-drawer-3">Polityka plików cookie</a>
+          </Link>
         </div>
       </footer>
       <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">

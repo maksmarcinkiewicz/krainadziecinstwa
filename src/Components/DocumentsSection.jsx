@@ -106,8 +106,8 @@ const DocumentsSection = () => {
   );
 
   return (
-    <section id="documents" className="bg-white py-12 p-4">
-      <div className="container mx-auto">
+    <section id="documents" className="bg-white py-12 p-4 ">
+      <div className="container mx-auto ">
         <h2 className="text-3xl font-bold mb-8">Dokumenty do pobrania</h2>
 
         {/* Dodaj przyciski */}
@@ -119,7 +119,7 @@ const DocumentsSection = () => {
             <div
               id={document.num}
               key={index}
-              className="p-4 bg-gray-100 rounded-xl snap-start scroll-ml-4 shrink-0 w-9/12 flex flex-col max-w-xs shadow-md"
+              className="p-4 bg-gray-100 rounded-xl snap-start scroll-ml-4 shrink-0 w-9/12 lg:w-full flex flex-col max-w-xs shadow-md "
             >
               <div className="flex justify-between items-baseline">
                 <h3 className="text-xl font-semibold mb-4">{document.nazwa}</h3>
@@ -127,13 +127,15 @@ const DocumentsSection = () => {
               </div>
               <p className="text-gray-600 text-justify">{document.opis}</p>
 
-              <a
+              <motion.a
                 href={document.plik}
                 className="mt-4 btn btn-outline w-full shadow-md"
                 download
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 Pobierz
-              </a>
+              </motion.a>
             </div>
           ))}
         </div>

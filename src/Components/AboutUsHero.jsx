@@ -4,7 +4,7 @@ import icon3 from "../assets/icons/about-section/innovation.png";
 import icon4 from "../assets/icons/about-section/individual.png";
 import aboutImg from "../assets/about-img.jpg";
 import rectangle from "../assets/reactangle.png";
-
+import { motion } from "framer-motion";
 const achievements = [
   {
     icon: icon1,
@@ -55,9 +55,15 @@ const AboutUsHero = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="snap-start scroll-ml-4 shrink-0 lg:shrink  w-8/12 border border-slate-100 md:w-1/2 lg:w-4/12 flex flex-col items-start gap-4 justify-center mb-6 shadow-md p-4 rounded-md"
+              className="snap-start scroll-ml-4 shrink-0 lg:shrink  w-8/12 border border-slate-100 md:w-1/2 lg:w-4/12 flex flex-col items-start gap-4 justify-start mb-6 shadow-md p-4 rounded-md"
             >
-              <img src={achievement.icon} alt="" className="h-12 mt-2" />
+              <motion.img
+                src={achievement.icon}
+                alt=""
+                className="h-12 mt-2"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              />
               <p className="text-gray-600">{achievement.text}</p>
             </div>
           ))}

@@ -5,7 +5,7 @@ import HomePage from "./pages/home-page";
 import DocumentsSection from "./Components/DocumentsSection";
 import ContactSection from "./Components/ContactSection";
 import Layout from "./Components/Layout";
-import Offer from "./Components/Offer";
+import OfferPage from "./pages/offer-page";
 import AboutPage from "./pages/about-page";
 import DocumentsPage from "./pages/documents-page";
 import ContactPage from "./pages/contact-page";
@@ -18,7 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="oferta" element={<Offer />} />
+          <Route path="oferta" element={<OfferPage />} />
           <Route path="o-nas" element={<AboutPage />} />
           <Route path="dokumenty" element={<DocumentsPage />} />
           <Route path="wydarzenia" element={<EventsPage />} />

@@ -21,30 +21,29 @@ function AnimatedTabs() {
   return (
     <div className="flex justify-end gap-4">
       {tabs.map((tab) => (
-        <button
+        <motion.button
           key={tab.id}
           onClick={() => handleTabClick(tab)}
           className={`${
             activeTab === tab.id ? "" : "hover:text-black/60"
-          } relative rounded-full px-3 py-1.5 text-lg font-medium text-gray-900 outline-sky-400 transition focus-visible:outline-2`}
+          } relative rounded-full px-3 py-1.5 text-md font-medium text-gray-900  transition focus-visible:outline-2`}
           style={{
             WebkitTapHighlightColor: "transparent",
           }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <Link to={tab.path}>
             {activeTab === tab.id && (
               <motion.span
                 layoutId="bubble"
-                className="absolute inset-0 z-10  mix-blend-difference border-2 border-black rounded-full "
-                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                style={{
-                  borderRadius: 9999,
-                }}
+                className="absolute inset-0 z-10  mix-blend-difference border-2 border-gray-900 rounded-full "
+                transition={{ type: "spring", bounce: 0.2, duration: 0.5 }}
               />
             )}
             {tab.label}
           </Link>
-        </button>
+        </motion.button>
       ))}
     </div>
   );

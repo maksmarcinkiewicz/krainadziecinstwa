@@ -2,8 +2,8 @@ import icon1 from "../assets/icons/about-section/quality.png";
 import icon2 from "../assets/icons/about-section/trust.png";
 import icon3 from "../assets/icons/about-section/innovation.png";
 import icon4 from "../assets/icons/about-section/individual.png";
-import aboutImg from "../assets/about-img.jpg";
-import rectangle from "../assets/reactangle.png";
+import aboutImg from "../assets/about-img.avif";
+import rectangle from "../assets/reactangle.avif";
 import { motion } from "framer-motion";
 const achievements = [
   {

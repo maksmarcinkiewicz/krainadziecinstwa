@@ -1,9 +1,9 @@
 import React from "react";
-import teamMember1 from "../assets/member-1.jpg";
-import teamMember2 from "../assets/member-2.jpg";
-import teamMember3 from "../assets/member-3.jpg";
-import teamMember4 from "../assets/member-4.jpg";
-import teamMember5 from "../assets/member-5.jpg";
+import teamMember1 from "../assets/member-1.avif";
+import teamMember2 from "../assets/member-2.avif";
+import teamMember3 from "../assets/member-3.avif";
+import teamMember4 from "../assets/member-4.avif";
+import teamMember5 from "../assets/member-5.avif";
 import { motion } from "framer-motion";
 const teamMembers = [
   {

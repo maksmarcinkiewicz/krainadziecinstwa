@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center p-4 lg:p-0 lg:gap-12">
       <div className="lg:w-1/2">
-        <img src={heroImg} alt="" className="mb-8" />
+        <img src={heroImg} alt="" className="mb-8 w-full h-full" />
       </div>
       <div className="lg:w-1/2">
         <motion.div

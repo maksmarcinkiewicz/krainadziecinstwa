@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import DrawerMain from "./navbar/DrawerMain";
 import DrawerSide from "./navbar/DrawerSide";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <div className="drawer-content flex flex-col">
         <DrawerMain />
         <Outlet />
+        <Footer />
       </div>
       <DrawerSide />
     </div>

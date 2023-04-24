@@ -15,7 +15,6 @@ const HomePage = () => {
       <TeamSection />
       <ThridSection />
       <ContactSection />
-      <Footer />
     </div>
   );
 };

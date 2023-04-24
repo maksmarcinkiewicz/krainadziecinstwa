@@ -5,7 +5,7 @@ const ContactForm = () => {
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
-      className="flex flex-col gap-8"
+      className="flex flex-col gap-4"
     >
       <input
         type="hidden"
@@ -24,6 +24,13 @@ const ContactForm = () => {
         type="email"
         name="email"
         placeholder="Email"
+        className="input input-bordered w-full "
+        required
+      />
+      <input
+        type="text"
+        name="title"
+        placeholder="Temat"
         className="input input-bordered w-full "
         required
       />

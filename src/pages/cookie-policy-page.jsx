@@ -157,7 +157,6 @@ const CookiePolicyPage = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const teamMembers = [
     id: 2,
     name: "Ewa Borowska",
     position: "Nauczycielka przedszkolna",
-    image: teamMember2,
+    image: teamMember4,
   },
   {
     id: 3,
@@ -28,13 +28,13 @@ const teamMembers = [
     id: 4,
     name: "Małgorzata Doruch",
     position: "Opiekunka dziecięca",
-    image: teamMember4,
+    image: teamMember5,
   },
   {
     id: 5,
     name: "Honorata Dworak",
     position: "Pomoc nauczycielki",
-    image: teamMember5,
+    image: teamMember2,
   },
 
   // Add more team members to the array as needed

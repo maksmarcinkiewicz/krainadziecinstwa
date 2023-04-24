@@ -14,7 +14,7 @@ const HomePage = () => {
       <DocumentsSection />
       <AboutUsHero />
       <TeamSection />
-      <OpeningHours />
+      {/* <OpeningHours /> */}
       <ThridSection />
       <ContactSection />
     </div>

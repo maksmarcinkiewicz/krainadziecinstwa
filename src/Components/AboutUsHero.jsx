@@ -36,7 +36,7 @@ const AboutUsHero = () => {
           <div className="">
             <img
               src={aboutImg}
-              className="rounded-l-full rounded-br-full about-img"
+              className="w-full h-full rounded-l-full rounded-br-full about-img"
               alt="about hero image"
             />
           </div>
@@ -61,7 +61,7 @@ const AboutUsHero = () => {
               <motion.img
                 src={achievement.icon}
                 alt="about icon"
-                className="h-12 mt-2"
+                className="w-12 h-12 mt-2"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               />

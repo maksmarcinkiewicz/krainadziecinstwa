@@ -18,7 +18,8 @@ const DrawerSide = () => {
       <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
 
       <ul className="menu p-4 w-80 bg-base-100">
-        <h3 className="font-bold p-4 ">Kraina Dzieciństwa w Łupowie</h3>
+        <span className="footer-title">Kraina Dzieciństwa w Łupowie</span>
+
         {menuItems.map((item) => (
           <motion.li
             key={item.label}

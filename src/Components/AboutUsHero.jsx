@@ -28,7 +28,7 @@ const AboutUsHero = () => {
           <div className="">
             <img
               src={rectangle}
-              alt=""
+              alt="rectangle object"
               className="absolute top-56 md:-top-20 -right-12 md:-right-24 w-60 h-60  rectangle-about -z-10"
             />
           </div>
@@ -37,6 +37,7 @@ const AboutUsHero = () => {
             <img
               src={aboutImg}
               className="rounded-l-full rounded-br-full about-img"
+              alt="about hero image"
             />
           </div>
         </div>
@@ -59,7 +60,7 @@ const AboutUsHero = () => {
             >
               <motion.img
                 src={achievement.icon}
-                alt=""
+                alt="about icon"
                 className="h-12 mt-2"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}

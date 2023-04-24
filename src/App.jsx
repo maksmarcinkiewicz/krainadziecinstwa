@@ -34,11 +34,11 @@ export default function App() {
 
 function NoMatch() {
   return (
-    <div>
-      <h2>Nothing to see here!</h2>
-      <p>
-        <Link to="/">Go to the home page</Link>
-      </p>
+    <div className="flex flex-col justify-center items-center h-screen">
+      <h2 className="text-3xl">Strona nie istnieje.</h2>
+      <button className="btn btn-outline mt-8">
+        <Link to="/">Powrót do strony głównej</Link>
+      </button>
     </div>
   );
 }

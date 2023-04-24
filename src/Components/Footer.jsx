@@ -1,29 +1,47 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const Footer = () => {
+  // definicja tablicy linków
+  const links = [
+    { label: "O nas", to: "/o-nas" },
+    { label: "Oferta", to: "/oferta" },
+    { label: "Jak zapisać dziecko", to: "/jak-zapisac-dziecko" },
+    { label: "Cennik", to: "/cennik" },
+    { label: "Regulamin", to: "/regulamin" },
+    { label: "Kontakt", to: "/kontakt" },
+    { label: "Polityka prywatności", to: "/polityka-prywatnosci" },
+    { label: "Polityka plików cookie", to: "/cookie" },
+  ];
+
   return (
     <div className="bg-base-200">
       <footer className="footer container mx-auto p-10 bg-base-200 text-base-content">
         <div>
           <span className="footer-title">Nasze przedszkole</span>
-          <a className="link link-hover">O nas</a>
-          <a className="link link-hover">Oferta</a>
+          {/* mapowanie linków */}
+          {links.slice(0, 2).map((link) => (
+            <Link key={link.to} to={link.to} className="link link-hover">
+              {link.label}
+            </Link>
+          ))}
         </div>
         <div>
           <span className="footer-title">Dla rodziców</span>
-          <a className="link link-hover">Jak zapisać dziecko</a>
-          <a className="link link-hover">Cennik</a>
-          <a className="link link-hover">Regulamin</a>
+          {/* mapowanie linków */}
+          {links.slice(2, 5).map((link) => (
+            <Link key={link.to} to={link.to} className="link link-hover">
+              {link.label}
+            </Link>
+          ))}
         </div>
         <div>
           <span className="footer-title">Pozostałe informacje</span>
-          <Link to="/kontakt">Kontakt</Link>
-
-          <a className="link link-hover">Polityka prywatności</a>
-
-          <Link to="/cookie">
-            <a href="#my-drawer-3">Polityka plików cookie</a>
-          </Link>
+          {/* mapowanie linków */}
+          {links.slice(5, 8).map((link) => (
+            <Link key={link.to} to={link.to} className="link link-hover">
+              {link.label}
+            </Link>
+          ))}
         </div>
       </footer>
       <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">

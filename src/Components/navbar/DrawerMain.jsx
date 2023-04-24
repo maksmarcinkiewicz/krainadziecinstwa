@@ -1,5 +1,5 @@
 import AnimatedTabs from "../AnimatedTabs";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.avif";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 const DrawerMain = () => {

@@ -1,4 +1,3 @@
-import Footer from "../Components/Footer";
 const CookiePolicyPage = () => {
   return (
     <div>

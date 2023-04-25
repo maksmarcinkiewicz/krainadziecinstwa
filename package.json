@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@trendyol-js/react-carousel": "^3.0.2",
+    "@vercel/analytics": "^1.0.0",
     "daisyui": "^2.51.5",
     "framer-motion": "^10.11.6",
     "localforage": "^1.10.0",

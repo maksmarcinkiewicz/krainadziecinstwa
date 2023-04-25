@@ -15,11 +15,7 @@ const contactData = [
   },
   {
     img: phoneIcon,
-    content: "+48 123 456 789",
-  },
-  {
-    img: contactImg,
-    content: "krainadziecinstwa@gmail.com",
+    content: "+48 604 508 692",
   },
 ];
 
@@ -39,7 +35,7 @@ const ContactSection = () => {
 
           <div className="flex flex-col  ">
             <div className="flex justify-between py-8">
-              <a href="mailto:test@test.pl">
+              <a href="mailto:krainadziecinstwa@gmail.com">
                 <motion.img
                   src={emailIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"
@@ -49,7 +45,7 @@ const ContactSection = () => {
                 />
               </a>
 
-              <a href="tel:+48123456789">
+              <a href="tel:+48604508692">
                 <motion.img
                   src={phoneIcon} // ścieżka do zdjęcia
                   alt="Zdjęcie kontaktowe"

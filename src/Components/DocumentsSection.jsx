@@ -15,6 +15,7 @@ import rozkladDniaKlubik from "../assets/documents/club/rozklad-dnia-klubik.pdf"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CategoryTabs from "./CategoryTabs";
+
 const documents = [
   {
     nazwa: "Ewaluacja",
@@ -99,6 +100,12 @@ let categories = [
   { id: "klubik", label: "Klubik" },
 ];
 const DocumentsSection = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
   const [selectedCategory, setSelectedCategory] = useState("przedszkole");
   let [activeCategory, setActiveCategory] = useState(categories[0].id);
   const filteredDocuments = documents.filter(

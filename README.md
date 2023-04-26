@@ -5,4 +5,4 @@ The navigation menu is easy to use, with links to important sections.
 The website is fully responsive and optimized for all devices, ensuring a seamless user experience for parents and potential students.
 
 ## [main link](https://www.krainadziecinstwa.pl)
-### [vercel link](https://www.krainadziecinstwa.vercel.app)
+### [vercel link](www.krainadziecinstwa.vercel.app)

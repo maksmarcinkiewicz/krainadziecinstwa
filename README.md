@@ -1,2 +1,2 @@
-## [main link](krainadziecinstwa.pl)
-### [vercel link](krainadziecinstwa.vercel.app)
+## [main link](https://www.krainadziecinstwa.pl)
+### [vercel link](https://www.krainadziecinstwa.vercel.app)

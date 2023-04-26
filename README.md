@@ -1,3 +1,2 @@
 krainadziecinstwa.vercel.app
-krainadziecinstwa.netlify.app
 krainadziecinstwa.pl

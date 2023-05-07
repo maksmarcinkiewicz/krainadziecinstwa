@@ -20,8 +20,10 @@ const Footer = () => {
           <span className="footer-title">Nasze przedszkole</span>
           {/* mapowanie linków */}
           {links.slice(0, 2).map((link) => (
-            <Link key={link.to} to={link.to} className="link link-hover">
-              {link.label}
+            <Link key={link.to} to={link.to} className="link-hover">
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                {link.label}
+              </motion.div>
             </Link>
           ))}
         </div>
@@ -29,8 +31,10 @@ const Footer = () => {
           <span className="footer-title">Dla rodziców</span>
           {/* mapowanie linków */}
           {links.slice(2, 5).map((link) => (
-            <Link key={link.to} to={link.to} className="link link-hover">
-              {link.label}
+            <Link key={link.to} to={link.to} className="link-hover">
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                {link.label}
+              </motion.div>
             </Link>
           ))}
         </div>
@@ -38,8 +42,10 @@ const Footer = () => {
           <span className="footer-title">Pozostałe informacje</span>
           {/* mapowanie linków */}
           {links.slice(5, 8).map((link) => (
-            <Link key={link.to} to={link.to} className="link link-hover">
-              {link.label}
+            <Link key={link.to} to={link.to} className="link-hover">
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                {link.label}
+              </motion.div>
             </Link>
           ))}
         </div>

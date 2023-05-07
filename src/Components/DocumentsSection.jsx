@@ -117,11 +117,9 @@ const DocumentsSection = () => {
       <div className="container mx-auto ">
         <h2 className="text-3xl font-bold mb-8">Dokumenty do pobrania</h2>
 
-        {/* Dodaj przyciski */}
         <CategoryTabs setSelectedCategory={setSelectedCategory} />
 
         <div className="relative w-full flex snap-x snap-mandatory overflow-x-auto pb-10  gap-6 py-8 lg:grid lg:grid-cols-4 lg:snap-none ">
-          {/* Wyświetl tylko dokumenty z wybranej kategorii */}
           {filteredDocuments.map((document, index) => (
             <div
               id={document.num}

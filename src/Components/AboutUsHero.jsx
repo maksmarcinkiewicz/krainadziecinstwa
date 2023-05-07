@@ -29,7 +29,7 @@ const AboutUsHero = () => {
             <img
               src={rectangle}
               alt="rectangle object"
-              className="absolute top-56 md:-top-20 -right-12 md:-right-24 w-60 h-60  rectangle-about -z-10"
+              className="absolute top-32 -right-10 md:-top-20 lg:-right-32 md:-right-24 w-60 h-60 lg:w-80 lg:h-80  rectangle-about -z-10"
             />
           </div>
 

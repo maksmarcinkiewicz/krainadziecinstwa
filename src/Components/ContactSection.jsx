@@ -1,5 +1,5 @@
 import React from "react";
-import contactImg from "../assets/contactImg.avif";
+import contactImg from "../assets/kindergarten-building.png";
 import emailIcon from "../assets/icons/at-sign.png";
 import facebookIcon from "../assets/icons/facebook.png";
 import phoneIcon from "../assets/icons/phoneIcon.png";
@@ -21,13 +21,13 @@ const contactData = [
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-white py-10 container mx-auto">
+    <section id="contact" className="bg-white container mx-auto">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 flex items-center justify-center">
           <img
             src={contactImg} // ścieżka do zdjęcia
             alt="Zdjęcie kontaktowe"
-            className="w-96 h-96 object-cover"
+            className="w-10/12 h-10/12 object-cover"
           />
         </div>
         <div className="md:w-1/2 md:ml-10 rounded-md p-6 bg-gray-100 m-4 shadow-md">

@@ -17,21 +17,42 @@ const DrawerSide = () => {
     <div className="drawer-side">
       <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
 
-      <ul className="menu p-4 w-80 bg-base-100">
-        <span className="footer-title">Kraina Dzieciństwa w Łupowie</span>
-
-        {menuItems.map((item) => (
-          <motion.li
-            key={item.label}
-            whileHover={{ scale: 1.1 }}
+      <ul className="menu p-4 w-80 bg-base-100 flex justify-between">
+        <div>
+          <p className="footer-title mb-4">Kraina Dzieciństwa w Łupowie</p>
+          {menuItems.map((item) => (
+            <motion.li
+              key={item.label}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link to={item.link} className="-mx-4">
+                <img src={item.icon} alt="" className="w-6 h-6" />
+                <span>{item.label}</span>
+              </Link>
+            </motion.li>
+          ))}
+        </div>
+        <div>
+          <p className="footer-title mb-4">Social Media</p>
+          <motion.a
+            href="https://www.facebook.com/profile.php?id=100049134353286"
+            whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
+            target="_blank"
           >
-            <Link to={item.link}>
-              <img src={item.icon} alt="" className="w-6 h-6" />
-              <span>{item.label}</span>
-            </Link>
-          </motion.li>
-        ))}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              className="fill-current"
+              alt="facebook-icon"
+            >
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </motion.a>
+        </div>
       </ul>
     </div>
   );

@@ -10,6 +10,7 @@ import DocumentsPage from "./pages/documents-page";
 import ContactPage from "./pages/contact-page";
 import EventsPage from "./pages/events-page";
 import CookiePolicyPage from "./pages/cookie-policy-page";
+import PolicyPage from "./pages/policy-page";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="wydarzenia" element={<EventsPage />} />
           <Route path="kontakt" element={<ContactPage />} />
           <Route path="cookie" element={<CookiePolicyPage />} />
+          <Route path="polityka-prywatnosci" element={<PolicyPage />} />
 
           <Route path="*" element={<NoMatch />} />
         </Route>

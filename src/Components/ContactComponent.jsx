@@ -1,51 +1,41 @@
 const ContactComponent = () => {
-  const collapseTexts = [
-    {
-      title: "Współpraca z rodzicami",
-      content:
-        "Partnerstwo z rodzicami to dla nas kluczowe. Regularnie spotykamy się z nimi, omawiamy postępy dziecka i słuchamy uwag i sugestii. Dzięki temu lepiej dostosowujemy nasze zajęcia do potrzeb każdego dziecka.",
-    },
-    {
-      title: "Rozwój dzieci",
-      content:
-        "W naszym przedszkolu stawiamy na rozwój dzieci we wszystkich sferach życia. Program zajęć rozwija kreatywność, zdolności manualne, sprawność fizyczną oraz umiejętności społeczne i emocjonalne. Indywidualne podejście do każdego dziecka pomaga mu w osiąganiu sukcesów.",
-    },
-    {
-      title: "Zdrowa dieta",
-      content:
-        "Wiedząc, jak ważna jest zdrowa dieta dla rozwoju dzieci, oferujemy w naszym przedszkolu posiłki przygotowywane na miejscu z naturalnych i świeżych składników. Dbamy o ich zróżnicowanie, smak i odpowiednie wartości odżywcze. Wspieramy też zdrowe nawyki żywieniowe dzieci, by pomóc im w utrzymaniu zdrowia i dobrego samopoczucia.",
-    },
-    {
-      title: "Bezpieczeństwo dzieci",
-      content:
-        "W naszym przedszkolu priorytetem jest bezpieczeństwo dzieci. Posiadamy niezbędne zabezpieczenia, takie jak alarmy przeciwpożarowe i systemy monitoringu. Nasi nauczyciele są przeszkoleni w udzielaniu pierwszej pomocy, co pozwala nam szybko reagować na ewentualne wypadki.",
-    },
-  ];
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white pt-12">
       <div className="mx-auto container p-4">
         <h2 className="text-3xl font-bold mb-8">Kontakt</h2>
-        <p className="text-lg text-justify mb-8">
-          Zapraszamy do kontaktu z naszym przedszkolem! Jesteśmy gotowi
-          odpowiedzieć na wszystkie Państwa pytania i wątpliwości. Nasz zespół
-          pracowników zawsze służy pomocą i chętnie udzieli wszelkich
-          informacji.
-        </p>
-        {collapseTexts.map((collapseText, index) => (
-          <div
-            tabIndex={0}
-            className={`collapse collapse-arrow border border-base-300 bg-base-100 rounded-md mb-2`}
-            key={index}
-          >
-            <input type="checkbox" />
-            <div className="collapse-title text-xl font-medium">
-              {collapseText.title}
-            </div>
-            <div className="collapse-content">
-              <p className="text-justify">{collapseText.content}</p>
-            </div>
+        <div className="flex flex-col">
+          <div className="lg:flex lg:gap-20">
+            <p className="text-lg text-justify mb-8">
+              Możesz odwiedzić nas pod adresem <b>Lipowa 12</b> w miejscowości{" "}
+              <b>Jenin</b>. Jeśli wolisz porozmawiać, zadzwoń pod numer{" "}
+              <a href="tel:+48579612082">
+                <b className="underline">+48 579 612 082</b>
+              </a>
+              . Chętnie odpowiemy na Twoje pytania i udzielimy niezbędnych
+              informacji.
+            </p>
+            <p className="text-lg text-justify  mb-8">
+              Ważne jest dla nas, aby zapewnić Ci wygodę i możliwość kontaktu.
+              Dlatego jesteśmy dostępni od <b>poniedziałku</b> do <b>piątku</b>,
+              przez cały <b>tydzień roboczy</b>, w godzinach od <b>6:30</b> do
+              <b> 16:30</b>.
+            </p>
+            <p className="text-lg text-justify">
+              Skontaktuj się z nami drogą e-mailową:
+              <b>
+                {" "}
+                <a
+                  href="mailto:krainadziecinstwa.lupowo@gmail.com"
+                  className="underline"
+                >
+                  krainadziecinstwa.lupowo@gmail.com
+                </a>
+              </b>
+              . Odpowiemy tak szybko, jak to możliwe, aby zapewnić Ci wygodę i
+              możliwość kontaktu.
+            </p>
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <div className="bg-base-200">
-      <footer className="footer container mx-auto p-10 bg-base-200 text-base-content">
+      <footer className="footer container mx-auto p-4 bg-base-200 text-base-content">
         <div>
           <span className="footer-title">Nasze przedszkole</span>
           {/* mapowanie linków */}
@@ -50,7 +50,7 @@ const Footer = () => {
           ))}
         </div>
       </footer>
-      <footer className="footer container mx-auto px-10 py-4 bg-base-200 text-base-content ">
+      <footer className="footer container mx-auto px-4 py-4 bg-base-200 text-base-content ">
         <div className="items-center  grid-flow-col">
           <p>
             <span className="text-lg font-bold">

@@ -21,7 +21,7 @@ const contactData = [
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-white py-10 container mx-auto">
+    <section id="contact" className="bg-white container mx-auto">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 flex items-center justify-center">
           <img

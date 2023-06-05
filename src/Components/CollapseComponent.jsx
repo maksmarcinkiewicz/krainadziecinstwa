@@ -40,7 +40,7 @@ const CollapseComponents = () => {
           }`}
         >
           <div className="">
-            <h2 className="lg:text-4xl font-medium md:pb-4">
+            <h2 className="text-2xl lg:text-4xl font-medium pb-4 text-justify">
               {collapseText.title}
             </h2>
             <p className="text-justify lg:text-xl">{collapseText.content}</p>

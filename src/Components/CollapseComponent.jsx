@@ -1,7 +1,6 @@
 import img from "../assets/about-us-img.png";
 import aboutImg from "../assets/about-us-illustration.png";
 import joinImg from "../assets/join-us-illustration.png";
-import teachImg from "../assets/about-us-teaching-illustration.png";
 import atmoImg from "../assets/atmosphere-illustration.png";
 
 const CollapseComponents = () => {

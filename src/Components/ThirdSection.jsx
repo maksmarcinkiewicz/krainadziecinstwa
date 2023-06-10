@@ -3,7 +3,7 @@ import foodIcon from "../assets/icons/food-icon.png";
 import safetyIcon from "../assets/icons/safety-icon.png";
 import experienceIcon from "../assets/icons/experience-icon.png";
 import teachingIcon from "../assets/icons/teaching-icon.png";
-
+import { motion } from "framer-motion";
 const benefits = [
   {
     img: experienceIcon,
@@ -40,9 +40,11 @@ const ThridSection = () => {
             <div className=" mx-auto">
               <ul className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {benefits.map((benefit, index) => (
-                  <li
-                    className="text-gray-700 flex flex-col gap-2  p-4 rounded-xl shadow-md"
+                  <motion.li
+                    className="text-gray-700 flex flex-col gap-2  p-4 rounded-xl shadow-md bg-white"
                     key={index}
+                    whileHover={{ y: -50 }}
+                    transition={{ duration: 0.2 }}
                   >
                     <img
                       src={benefit.img}
@@ -58,7 +60,7 @@ const ThridSection = () => {
                         {benefit.content}
                       </p>
                     </div>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>

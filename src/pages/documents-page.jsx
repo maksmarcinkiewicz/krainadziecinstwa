@@ -21,6 +21,7 @@ const DocumentsPage = () => {
           src={documentImg}
           alt="documents img"
           className="md:w-3/12 w-9/12"
+          loading="lazy"
         />
       </motion.div>
       <DocumentsSection />

@@ -10,7 +10,12 @@ const ContactComponent = () => {
         transition={{ duration: 1 }}
       >
         <h2 className="text-3xl font-bold mb-8">Kontakt</h2>
-        <img src={contactImg} alt="" className="lg:hidden" />
+        <img
+          src={contactImg}
+          alt="building img contact"
+          className="lg:hidden"
+          loading="lazy"
+        />
         <div className="flex flex-col lg:flex-row lg:items-center">
           <div className="lg:flex lg:gap-8">
             <p className="text-lg text-justify mb-8">
@@ -45,8 +50,9 @@ const ContactComponent = () => {
           </div>
           <img
             src={contactImg}
-            alt=""
+            alt="contact building img"
             className="lg:w-3/12 lg:pb-20 hidden lg:block"
+            loading="lazy"
           />
         </div>
       </motion.div>

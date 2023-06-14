@@ -2,7 +2,9 @@ import AnimatedTabs from "../AnimatedTabs";
 import logo from "../../assets/logo.avif";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const DrawerMain = () => {
+  const [trigger, setTrigger] = useState(0);
   return (
     <div className="container mx-auto flex items-center justify-between  px-2">
       <div className=" lg:hidden ">
@@ -32,12 +34,15 @@ const DrawerMain = () => {
             src={logo}
             alt="logo"
             className="w-[64px] lg:w-[128px] h-[64px] lg:h-[128px] mt-2"
+            onClick={() => {
+              setTrigger((trigger) => trigger + 1);
+            }}
           />
         </Link>
       </motion.div>
       <div className="hidden lg:block ">
         <ul className="menu menu-horizontal">
-          <AnimatedTabs />
+          <AnimatedTabs trigger={trigger} />
         </ul>
       </div>
     </div>

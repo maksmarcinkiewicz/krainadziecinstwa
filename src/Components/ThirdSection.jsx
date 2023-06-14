@@ -43,19 +43,17 @@ const ThridSection = () => {
                   <motion.li
                     className="text-gray-700 flex flex-col gap-2  p-4 rounded-xl shadow-md bg-white"
                     key={index}
-                    whileHover={{ y: -50 }}
-                    transition={{ duration: 0.2 }}
+                    whileHover={{ y: -40 }}
+                    transition={{ duration: 0.3 }}
                   >
                     <img
                       src={benefit.img}
                       alt="Food Icon"
-                      className="w-16 h-16 "
+                      className="w-16 h-16 ml-4"
                     />
 
-                    <div className=" p-4 rounded-md">
-                      <h3 className="text-xl font-bold mt-2">
-                        {benefit.title}
-                      </h3>
+                    <div className="p-4 rounded-md">
+                      <h3 className="text-xl font-bold">{benefit.title}</h3>
                       <p className="text-justify text-gray-500 lg:mt-2">
                         {benefit.content}
                       </p>

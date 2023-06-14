@@ -1,9 +1,14 @@
 import contactImg from "../assets/contact-illustration.png";
-
+import { motion } from "framer-motion";
 const ContactComponent = () => {
   return (
     <section className="bg-white pt-12">
-      <div className="mx-auto container p-4">
+      <motion.div
+        className="mx-auto container p-4 "
+        initial={{ y: -300, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className="text-3xl font-bold mb-8">Kontakt</h2>
         <img src={contactImg} alt="" className="lg:hidden" />
         <div className="flex flex-col lg:flex-row lg:items-center">
@@ -44,7 +49,7 @@ const ContactComponent = () => {
             className="lg:w-3/12 lg:pb-20 hidden lg:block"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

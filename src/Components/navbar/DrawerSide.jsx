@@ -3,9 +3,11 @@ import aboutIcon from "../../assets/icons/nav-icons/about.png";
 import eventIcon from "../../assets/icons/nav-icons/event.png";
 import contactIcon from "../../assets/icons/nav-icons/contact-book.png";
 import offerIcon from "../../assets/icons/nav-icons/offer.png";
+import homeIcon from "../../assets/icons/nav-icons/home.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const menuItems = [
+  { label: "Strona główna", icon: homeIcon, link: "/" },
   { label: "Oferta", icon: offerIcon, link: "/oferta" },
   { label: "O nas", icon: aboutIcon, link: "/o-nas" },
   { label: "Dokumenty", icon: docIcon, link: "/dokumenty" },

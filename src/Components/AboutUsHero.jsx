@@ -22,7 +22,12 @@ const achievements = [
 
 const AboutUsHero = () => {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center p-4 overflow-x-hidden md:overflow-auto lg:pt-16">
+    <motion.div
+      className="container mx-auto flex flex-col lg:flex-row items-center justify-center p-4 overflow-x-hidden md:overflow-auto lg:pt-16"
+      initial={{ y: -300, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="w-full lg:w-1/2 lg:pr-10">
         <div className="relative">
           <div className="">
@@ -52,11 +57,13 @@ const AboutUsHero = () => {
           wykorzystaniem nowoczesnych narzędzi, nasz doświadczony zespół
           nauczycieli stworzy dla Twojego dziecka najlepsze warunki do rozwoju.
         </p>
-        <div className=" mt-10 gap-4 relative w-full flex snap-x snap-mandatory overflow-x-auto pb-8">
+        <div className="pt-10 gap-4 relative w-full flex snap-x snap-mandatory overflow-x-auto pb-8">
           {achievements.map((achievement, index) => (
-            <div
+            <motion.div
               key={index}
-              className="snap-start scroll-ml-4 shrink-0 lg:shrink  w-8/12 border border-slate-100 md:w-1/2 lg:w-4/12 flex flex-col items-start gap-4 justify-start mb-6 shadow-md p-4 rounded-md"
+              className="z-50 snap-start scroll-ml-4 shrink-0 lg:shrink  w-8/12 border border-slate-100 md:w-1/2 lg:w-4/12 flex flex-col items-start gap-4 justify-start mb-6 shadow-md p-4 rounded-md bg-white"
+              whileHover={{ y: -25 }}
+              transition={{ duration: 0.3 }}
             >
               <motion.img
                 src={achievement.icon}
@@ -66,11 +73,11 @@ const AboutUsHero = () => {
                 whileTap={{ scale: 0.9 }}
               />
               <p className="text-gray-600">{achievement.text}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default AboutUsHero;

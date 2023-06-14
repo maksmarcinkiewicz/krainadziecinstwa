@@ -51,7 +51,12 @@ const CollapseComponents = () => {
             </h2>
             <p className="text-justify lg:text-xl">{collapseText.content}</p>
           </div>
-          <img src={collapseText.img} alt="" className="w-10/12 lg:w-5/12" />
+          <img
+            src={collapseText.img}
+            alt="about us img section"
+            className="w-10/12 lg:w-5/12"
+            loading="lazy"
+          />
         </motion.div>
       ))}
     </div>

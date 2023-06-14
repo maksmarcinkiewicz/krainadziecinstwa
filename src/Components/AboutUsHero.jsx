@@ -35,6 +35,7 @@ const AboutUsHero = () => {
               src={rectangle}
               alt="rectangle object"
               className="absolute top-32 -right-10 md:-top-20 lg:-right-32 md:-right-24 w-60 h-60 lg:w-80 lg:h-80  rectangle-about -z-10"
+              loading="lazy"
             />
           </div>
 
@@ -43,6 +44,7 @@ const AboutUsHero = () => {
               src={aboutImg}
               className="w-full h-full rounded-l-full rounded-br-full about-img"
               alt="about hero image"
+              loading="lazy"
             />
           </div>
         </div>

@@ -15,7 +15,12 @@ const Hero = () => {
       className="container mx-auto flex flex-col lg:flex-row-reverse items-center p-4 lg:p-0 lg:gap-12"
     >
       <motion.div className="lg:w-1/2">
-        <img src={heroImg} alt="" className="mb-8 w-full h-full" />
+        <img
+          src={heroImg}
+          alt="hero img"
+          loading="lazy"
+          className="mb-8 w-full h-full"
+        />
       </motion.div>
       <div className="lg:w-1/2">
         <motion.div

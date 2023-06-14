@@ -21,15 +21,15 @@ const contactData = [
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-white container mx-auto">
+    <section id="contact" className={`bg-white container mx-auto my-24`}>
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 flex items-center justify-center">
+        <motion.div className="md:w-1/2 flex items-center justify-center">
           <img
             src={contactImg} // ścieżka do zdjęcia
             alt="Zdjęcie kontaktowe"
             className="w-10/12 h-10/12 object-cover"
           />
-        </div>
+        </motion.div>
         <div className="md:w-1/2 md:ml-10 rounded-md p-6 bg-gray-100 m-4 shadow-md">
           <h2 className="text-3xl font-bold mb-4">Skontaktuj się z nami</h2>
 

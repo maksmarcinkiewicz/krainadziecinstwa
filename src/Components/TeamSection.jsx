@@ -69,12 +69,13 @@ const TeamSection = () => {
             <motion.div
               key={teamMember.id}
               className="relative"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
             >
               <img
                 src={teamMember.image}
                 alt={`Team Member ${teamMember.id}`}
-                className="w-64 h-full object-cover rounded-xl shadow-md brightness-75 "
+                className="w-64 h-full object-cover rounded-xl shadow-md brightness-75"
               />
               <div className="absolute bottom-0 left-0 right-0 p-4  ">
                 <p className="text-white text-center text-sm font-extrabold">

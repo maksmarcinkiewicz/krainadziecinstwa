@@ -117,12 +117,12 @@ const DocumentsSection = () => {
       <div className="container mx-auto ">
         <CategoryTabs setSelectedCategory={setSelectedCategory} />
 
-        <div className="relative w-full flex snap-x snap-mandatory overflow-x-auto pb-10  gap-6 py-8 lg:grid lg:grid-cols-4 lg:snap-none ">
+        <div className="relative w-full flex snap-x snap-mandatory overflow-x-auto pb-10  gap-6 py-8  ">
           {filteredDocuments.map((document, index) => (
-            <div
+            <motion.div
               id={document.num}
               key={index}
-              className="p-4 bg-gray-100 rounded-xl snap-start scroll-ml-4 shrink-0 w-9/12 lg:w-full flex flex-col max-w-xs shadow-md justify-between"
+              className=" p-4 bg-gray-100 rounded-xl snap-start scroll-ml-4 shrink-0 w-9/12 lg:w-full flex flex-col max-w-xs shadow-md justify-between"
             >
               <div className="flex justify-between items-baseline">
                 <h3 className="text-xl font-semibold mb-4">{document.nazwa}</h3>
@@ -139,7 +139,7 @@ const DocumentsSection = () => {
               >
                 Pobierz
               </motion.a>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
